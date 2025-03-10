@@ -1,0 +1,29 @@
+\documentclass[12pt]{report}
+
+% Paquetes LaTeX y estilos globales
+\input{etc/pkgs}
+\input{etc/style}
+
+% Variables para la portada
+\setTitle{Título del trabajo}
+\setAuthor{Nombre del alumno} % Si hay más de un autor, separarlos con \\
+\setDegree{Ingeniero Geofísico} % Cambiar si es necesario
+\setSupervisor{Nombre del profesor tutor} % Si hay más de un tutor, separarlos con \\
+\setDepartment{Lenguajes y Sistemas Informáticos}
+\setMonth{junio/julio/diciembre} % Dejar sólo el mes de la convocatoria en que se presenta el trabajo
+\setYear{20XX/23}
+
+% Comienzo del documento
+\begin{document}
+
+    % Portada y secciones no numeradas
+    \input{sections/00_portada}
+    \tableofcontents
+
+    \clearpage\pagenumbering{arabic}
+
+    \input{sections/ejemplos_borrame}
+    \sloppy
+    \printbibliography[heading=bibintoc, title = {Referencias}]
+
+\end{document}
